@@ -1,6 +1,6 @@
 <div align="center">
   
-# Awesome Header Bidding 🎯
+# Awesome Header Bidding
 
 **A curated, engineering-first index of the open-source header bidding stack — the wrappers, debuggers, identity modules, and specifications that make programmatic auctions legible and measurable.**
 
@@ -10,7 +10,7 @@
 
 </div>
 
-## 📑 Table of Contents
+## Table of Contents
 
 - [Core Open-Source Frameworks](#-core-open-source-frameworks)
 - [Browser Extensions and Debugging Tools](#-browser-extensions-and-debugging-tools)
@@ -25,7 +25,7 @@
 
 ---
 
-## 🧩 Core Open-Source Frameworks
+## Core Open-Source Frameworks
 
 The engines that actually run the auction — read these before evaluating any vendor on top of them.
 
@@ -40,7 +40,7 @@ The engines that actually run the auction — read these before evaluating any v
 
 ---
 
-## 🔍 Browser Extensions and Debugging Tools
+## Browser Extensions and Debugging Tools
 
 Read the auction from the outside — these capture what the console alone will not show you.
 
@@ -55,7 +55,7 @@ Read the auction from the outside — these capture what the console alone will 
 
 ---
 
-## 🪪 User ID and Identity Modules
+## User ID and Identity Modules
 
 Cookie-free addressability is the hard part of modern wrappers — start with the module contract, then evaluate providers.
 
@@ -72,7 +72,7 @@ Cookie-free addressability is the hard part of modern wrappers — start with th
 
 ---
 
-## 📊 Analytics, Monitoring and Latency Tools
+## Analytics, Monitoring and Latency Tools
 
 If you cannot reconstruct the auction afterwards, you cannot defend the floor, the timeout, or the bidder mix.
 
@@ -87,7 +87,7 @@ If you cannot reconstruct the auction afterwards, you cannot defend the floor, t
 
 ---
 
-## 🚀 Wrappers, Boilerplates and Starter Kits
+## Wrappers, Boilerplates and Starter Kits
 
 Working starting points for the unglamorous parts: line items, key-values, build pipelines, and framework bindings.
 
@@ -105,7 +105,7 @@ Working starting points for the unglamorous parts: line items, key-values, build
 
 ---
 
-## 📉 Price Floors, Timeouts and Optimization Guides
+## Price Floors, Timeouts and Optimization Guides
 
 Floors and timeouts move revenue more than most wrapper rewrites — tune them with evidence, not defaults.
 
@@ -120,7 +120,7 @@ Floors and timeouts move revenue more than most wrapper rewrites — tune them w
 
 ---
 
-## 📜 Specifications and Standards
+## Specifications and Standards
 
 Primary sources only — every field in a bid request traces back to one of these documents.
 
@@ -142,7 +142,7 @@ Primary sources only — every field in a bid request traces back to one of thes
 
 ---
 
-## 💬 Communities and Newsletters
+## Communities and Newsletters
 
 Where wrapper regressions get reported first, and where the reasoning behind the specs is argued out.
 
@@ -157,7 +157,7 @@ Where wrapper regressions get reported first, and where the reasoning behind the
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 PRs are welcome — this list only stays useful if entries stay accurate.
 
@@ -178,3 +178,5 @@ PRs are welcome — this list only stays useful if entries stay accurate.
 Released under [CC0 1.0 Universal](./LICENSE) — the list is dedicated to the public domain, so copy, remix, and redistribute it without attribution.
 
 Prebid, OpenRTB, ads.txt, sellers.json, and related names are the property of their respective owners; links are provided for identification only.
+
+[![CC0](https://img.shields.io/badge/CC0-1.0-lightgrey?style=flat-square)](LICENSE)
