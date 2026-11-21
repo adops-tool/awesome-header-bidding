@@ -1,6 +1,6 @@
-<div align="center">
-  
-# Awesome Header Bidding
+[![awesome-header-bidding](image/awesome-header-bidding.png)](https://github.com/adops-tool/awesome-header-bidding/pulls)
+
+[![animated-line](https://github.com/readme-SVG/animated-line/blob/main/STORAGE/line-svg-3D444D.svg)](https://github.com/readme-SVG/animated-line) <!-- -SVG-Line- -->
 
 **A curated, engineering-first index of the open-source header bidding stack — the wrappers, debuggers, identity modules, and specifications that make programmatic auctions legible and measurable.**
 
