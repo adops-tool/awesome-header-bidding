@@ -1,14 +1,14 @@
-<h1 align="center">Awesome Header Bidding 🎯</h1>
+<div align="center">
+  
+# Awesome Header Bidding 🎯
 
-<p align="center"><strong>A curated, engineering-first index of the open-source header bidding stack — the wrappers, debuggers, identity modules, and specifications that make programmatic auctions legible and measurable.</strong></p>
+**A curated, engineering-first index of the open-source header bidding stack — the wrappers, debuggers, identity modules, and specifications that make programmatic auctions legible and measurable.**
 
-<p align="center">
-  <a href="https://awesome.re"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square" alt="Awesome"></a>
-  <a href="#-contributing"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen?style=flat-square" alt="PRs Welcome"></a>
-  <a href="./LICENSE"><img src="https://img.shields.io/badge/License-CC0--1.0-lightgrey?style=flat-square" alt="License: CC0-1.0"></a>
-</p>
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0--1.0-lightgrey.svg)](LICENSE)
 
----
+</div>
 
 ## 📑 Table of Contents
 
