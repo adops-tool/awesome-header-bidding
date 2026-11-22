@@ -71,6 +71,12 @@
 
 ![web](image/alg_I.png) [Testing Prebid.js](https://docs.prebid.org/dev-docs/testing-prebid.html) - Prebid's own test requirements, including the coverage threshold enforced on adapter pull requests.
 
+![web](image/alg_I.png) [Server-to-Server Testing Module](https://docs.prebid.org/dev-docs/modules/s2sTesting.html) - Adds global and per-ad-unit A/B testing controls to compare client-side and server-side Prebid auctions.
+
+![web](image/alg_I.png) [Amazon Transparent Ad Marketplace (TAM)](https://aps.amazon.com/aps/solutions/transparent-ad-marketplace/) - Amazon Publisher Services server-side header bidding marketplace for web and mobile publishers with direct buyer contracts.
+
+![web](image/alg_I.png) [Amazon Unified Ad Marketplace (UAM)](https://aps.amazon.com/aps/unified-ad-marketplace/) - Managed server-side header bidding marketplace from Amazon Publisher Services with consolidated demand and billing.
+
 ### Server-Side Auction Engines
 
 ![github](image/alg_R.png) [Prebid Server (Go)](https://github.com/prebid/prebid-server) - High-throughput Go implementation of the Prebid Server auction engine for web, AMP, mobile, video, and CTV requests.
@@ -92,6 +98,10 @@
 ![github](image/alg_R.png) [Prebid Server on AWS](https://github.com/aws-solutions-library-samples/prebid-server-deployment-on-aws) - AWS Solutions guidance and infrastructure templates for deploying and operating Prebid Server.
 
 ![github](image/alg_R.png) [Trusted Server](https://github.com/IABTechLab/trusted-server) - Rust edge reverse proxy that gives publishers a first-party URL space, supports Prebid Server at the CDN layer, and adds ID and ads.cert handling.
+
+![github](image/alg_R.png) [Auctioneer](https://github.com/IABTechLab/auctioneer) - OpenRTB 2.6 auction engine written in Rust by IAB Tech Lab, usable as a standalone server or embeddable library; under active pre-release development.
+
+![github](image/alg_R.png) [EdgeZero](https://github.com/IABTechLab/edgezero) - IAB Tech Lab portable Rust framework for compiling edge HTTP workloads to WebAssembly across Fastly Compute, Cloudflare Workers, and Fermyon Spin.
 
 ![web](image/alg_I.png) [Prebid Server Endpoint Overview](https://docs.prebid.org/prebid-server/endpoints/pbs-endpoint-overview.html) - The full PBS API surface, from `/openrtb2/auction` and `/cookie_sync` through the admin and Prebid Cache endpoints.
 
@@ -120,6 +130,20 @@
 ![web](image/alg_I.png) [Prebid Server Cookie Sync](https://docs.prebid.org/prebid-server/developers/pbs-cookie-sync.html) - Bidders' sync endpoints and how to initiate a sync manually for debugging.
 
 ![web](image/alg_I.png) [Prebid.js s2sConfig Reference](https://docs.prebid.org/dev-docs/modules/prebidServer.html) - How the client calls PBS: account, stored requests, `disableBidCache`, and multi-format flags.
+
+![web](image/alg_I.png) [PBS Video Endpoint Reference](https://docs.prebid.org/prebid-server/endpoints/openrtb2/pbs-endpoint-video.html) - Request and response contract for `/openrtb2/video`, covering podded video auctions and VAST cache handoff.
+
+![web](image/alg_I.png) [How to Add a PBS Module (Java)](https://docs.prebid.org/prebid-server/developers/add-a-module-java.html) - Hook interfaces, Spring registration, and testing requirements for writing modules in PBS-Java.
+
+![web](image/alg_I.png) [How to Add a Prebid Server Adapter (Java)](https://docs.prebid.org/prebid-server/developers/add-new-bidder-java.html) - Checklist and bidder contract for implementing and testing a server-side adapter in PBS-Java.
+
+![web](image/alg_I.png) [PBS ORTB2 Blocking Module](https://docs.prebid.org/prebid-server/pbs-modules/ortb2-blocking.html) - Server-side module that applies blocked domains, advertiser categories, and creative attributes to outgoing OpenRTB requests.
+
+![web](image/alg_I.png) [PBS Request Correction Module](https://docs.prebid.org/prebid-server/pbs-modules/request-correction.html) - Prebid Server hook module that normalizes and patches malformed incoming OpenRTB requests before auction execution.
+
+![web](image/alg_I.png) [PBS Response Correction Module](https://docs.prebid.org/prebid-server/pbs-modules/response-correction.html) - Prebid Server hook module that adjusts bidder responses before targeting keys and cache entries are finalized.
+
+![web](image/alg_I.png) [PBS Deals Support](https://docs.prebid.org/prebid-server/features/pbs-deals.html) - How Prebid Server handles PMP deals, deal targeting keys, and priority line items.
 
 ### Rendering, Caching and Creative Containers
 
@@ -157,6 +181,10 @@
 
 ![github](image/alg_R.png) [UCID](https://github.com/IABTechLab/ucid) - Universal Creative Identification Framework, an open specification for fingerprinting creatives across the supply chain.
 
+![github](image/alg_R.png) [MRAID 3.0 Compliance Ads](https://github.com/InteractiveAdvertisingBureau/MRAID-3.0-Compliance-Ads) - IAB Tech Lab test creative suite for verifying mobile SDK compliance with the MRAID 3.0 container specification; dormant since 2018.
+
+![web](image/alg_I.png) [PBS Richmedia Filter Module](https://docs.prebid.org/prebid-server/pbs-modules/richmedia.html) - Server-side module that detects and filters rich media or MRAID creatives from bid responses based on account rules.
+
 ### Mobile, CTV and In-App SDKs
 
 ![github](image/alg_R.png) [Prebid Mobile Android](https://github.com/prebid/prebid-mobile-android) - Android SDK that requests bids from Prebid Server and renders them through GAM, AdMob, AppLovin MAX, or a custom ad server.
@@ -170,6 +198,16 @@
 ![github](image/alg_R.png) [react-native-ad-manager](https://github.com/narcitymedia/react-native-ad-manager) - React Native wrapper around the Google Ad Manager SDKs, the usual host for Prebid Mobile mediation; dormant since 2020.
 
 ![github](image/alg_R.png) [Epom Prebid Mobile demo apps](https://github.com/epom/epom-prebid-mobile-demo) - Reference iOS and Android apps selling in-app inventory through Epom Ad Server with Prebid Mobile.
+
+![github](image/alg_R.png) [NZME react-native-ad-manager](https://github.com/NZME/react-native-ad-manager) - Actively maintained React Native bridge to the Google Ad Manager mobile SDKs for banner, interstitial, and custom targeting.
+
+![github](image/alg_R.png) [Google Mobile Ads Android Examples](https://github.com/googleads/googleads-mobile-android-examples) - Official Android sample apps for Google Mobile Ads and Ad Manager SDK integrations, including mediation and bidding paths.
+
+![github](image/alg_R.png) [Google Mobile Ads iOS Examples](https://github.com/googleads/googleads-mobile-ios-examples) - Official iOS sample apps demonstrating Google Mobile Ads and Ad Manager SDK placement, targeting, and mediation.
+
+![github](image/alg_R.png) [Google Mobile Ads Flutter](https://github.com/googleads/googleads-mobile-flutter) - Official Flutter plugin for Google Mobile Ads and Google Ad Manager in-app monetization.
+
+![github](image/alg_R.png) [Google Mobile Ads Unity](https://github.com/googleads/googleads-mobile-unity) - Official Unity plugin for integrating Google Mobile Ads and Ad Manager SDKs into mobile games.
 
 ![web](image/alg_I.png) [Prebid Mobile Documentation](https://docs.prebid.org/prebid-mobile/) - SDK integration guides for both platforms, from initialization to ad server setup.
 
@@ -211,6 +249,20 @@
 
 ![github](image/alg_R.png) [self-adint](https://github.com/genaforvena/self-adint) - Reads your own advertising profile from the demand side by inspecting what an RTB bid request carries about one device.
 
+![github](image/alg_R.png) [Google Ads Viewability Insights Extension](https://github.com/googleads/googleads-viewability-insights-extension) - Official Chrome DevTools extension from Google for inspecting Active View viewability metrics on Google Ad Manager slots.
+
+![github](image/alg_R.png) [AdTrace GAM Inspector](https://github.com/adops-tool/adtrace-gam-inspector) - Chrome DevTools extension for inspecting live Google Ad Manager requests, slot targeting, and GPT delivery metadata.
+
+![github](image/alg_R.png) [chrome-extension-googlead](https://github.com/aanton/chrome-extension-googlead) - Open-source Chrome extension for capturing and analyzing Google Ad Manager network requests and targeting parameters.
+
+![github](image/alg_R.png) [Sellers.json Inspector](https://github.com/Chrome-Extensions-labs/Sellers.json-Inspector) - Manifest V3 Chrome extension that parses, highlights, and validates `sellers.json` files directly in the browser.
+
+![github](image/alg_R.png) [Lines Checker (ads.txt & sellers.json)](https://github.com/Chrome-Extensions-labs/Lines-Checker-ads.txt-app-ads.txt-sellers.json) - Manifest V3 Chrome extension that validates `ads.txt` and `app-ads.txt` records and cross-references seller IDs against `sellers.json`.
+
+![github](image/alg_R.png) [Privacy Sandbox Analysis Tool](https://github.com/GoogleChromeLabs/ps-analysis-tool) - Chrome DevTools extension and CLI from Google Chrome Labs for auditing third-party cookie usage and privacy API behavior; archived in 2026.
+
+![web](image/alg_I.png) [Google Publisher Console](https://developers.google.com/publisher-tag/guides/publisher-console) - Built-in GPT overlay and diagnostic console for inspecting slot overlays, page requests, delivery diagnostics, and configuration warnings.
+
 ![web](image/alg_I.png) [Professor Prebid User Guide](https://docs.prebid.org/tools/professor-prebid.html) - Official walkthrough of the extension's bid comparison, GAM console shortcut, CPM override, and creative overlay tools.
 
 ![web](image/alg_I.png) [Professor Prebid Video Guide](https://docs.prebid.org/tools/prof-prebid-video.html) - The same tools demonstrated on a live page.
@@ -242,6 +294,18 @@
 ![github](image/alg_R.png) [ccinnOpenRTB](https://github.com/whiteCcinn/ccinnOpenRTB) - Native macOS simulator that renders pasted OpenRTB 2.x and 3.0 bid responses so you can see what a creative will do.
 
 ![github](image/alg_R.png) [Prebid Integration Monitor](https://github.com/prebid/prebid-integration-monitor) - Prebid.org harness for monitoring a Prebid integration at runtime, built in TypeScript with Vitest; incubating.
+
+![github](image/alg_R.png) [Mocktioneer](https://github.com/stackpop/mocktioneer) - Deterministic mock OpenRTB 2.x and Amazon APS banner bidder written in Rust for testing Prebid.js, Prebid Server, and custom SDKs.
+
+![github](image/alg_R.png) [Eyevinn Test Adserver](https://github.com/Eyevinn/test-adserver) - Open-source VAST and SSAI test ad server for running reproducible video ad insertion integration tests.
+
+![github](image/alg_R.png) [Ads.txt <-> Sellers.json Validator](https://github.com/willlightningstrike/ads_txt_scraper) - Web tool that audits OpenRTB bid request SupplyChain hops and cross-references publisher `ads.txt` records against SSP `sellers.json` files.
+
+![web](image/alg_I.png) [IAB GPP & TCF Encoder/Decoder](https://iabgpp.com/) - Official IAB Tech Lab browser tool for decoding and encoding Global Privacy Protocol and TCF v2 consent strings across all jurisdictions.
+
+![web](image/alg_I.png) [IMA HTML5 Video Suite Inspector](https://googleads.github.io/googleads-ima-html5/vsi/) - Google's interactive browser tester for validating VAST and VMAP tags, tracking beacons, OMID access modes, and IMA SDK playback.
+
+![web](image/alg_I.png) [ads.txt & app-ads.txt Validator (ads.txt Guru)](https://adstxt.guru/validator/) - Hosted validator that checks `ads.txt`, `app-ads.txt`, and `sellers.json` files for syntax errors, duplicates, and IAB specification compliance.
 
 ---
 
@@ -283,17 +347,25 @@
 
 ![web](image/alg_I.png) [What is Post-Bid?](https://docs.prebid.org/overview/what-is-post-bid.html) - The competing model, where demand bids after the ad server has declined a line item.
 
+![web](image/alg_I.png) [Prebid.js Express Module](https://docs.prebid.org/dev-docs/modules/dfp_express.html) - Integrates Prebid.js into pages that already load GPT tags without rewriting existing slot definitions.
+
+![web](image/alg_I.png) [GPT General Best Practices](https://developers.google.com/publisher-tag/guides/general-best-practices) - Google's official engineering guidelines on GPT loading order, single-request architecture, prerendering, and latency optimization.
+
 ### Google Ad Manager API and Client Libraries
 
 ![web](image/alg_I.png) [Google Publisher Tag Reference](https://developers.google.com/publisher-tag/reference) - The authoritative `googletag` API reference for defining slots, targeting, and refresh.
 
 ![web](image/alg_I.png) [Google Ad Manager API](https://developers.google.com/ad-manager/api) - Entry point to the SOAP and REST surfaces used to automate orders, line items, and creatives.
 
+![web](image/alg_I.png) [Google Ad Manager REST API](https://developers.google.com/ad-manager/api/beta/getting-started) - Google's newer REST API for managing Ad Manager networks, inventory, orders, and reporting alongside the legacy SOAP surface.
+
 ![github](image/alg_R.png) [Google Publisher Tag Samples](https://github.com/googleads/google-publisher-tag-samples) - Google's official GPT samples, including auction-delay and targeting patterns used alongside Prebid.
 
 ![github](image/alg_R.png) [Google Publisher Tag Playground](https://github.com/googleads/google-publisher-tag-playground) - Interactive playground for writing and running the official GPT samples in the browser.
 
 ![github](image/alg_R.png) [Google Publisher Tag Types](https://github.com/googleads/google-publisher-tag-types) - Generated TypeScript definitions for GPT, which makes wrapper code type-checkable.
+
+![github](image/alg_R.png) [Google Ad Manager Python Client](https://github.com/googleads/googleads-python-lib) - Official Python client library for automating orders, line items, creatives, and reports via the Google Ad Manager SOAP API.
 
 ![github](image/alg_R.png) [Google Ad Manager PHP Client](https://github.com/googleads/googleads-php-lib) - Official PHP client library for the Ad Manager SOAP API.
 
@@ -325,6 +397,8 @@
 
 ![github](image/alg_R.png) [google-ad-manager-mcp](https://github.com/MatiousCorp/google-ad-manager-mcp) - MCP server exposing GAM campaigns, orders, line items, and creatives to an agent client.
 
+![github](image/alg_R.png) [Orbiads GAM MCP](https://github.com/OrbiAds/Orbiads-GAM-MCP) - MCP server exposing Google Ad Manager inventory, trafficking, and forecasting workflows to AI agent clients.
+
 ### Framework, CMS and Player Bindings
 
 ![github](image/alg_R.png) [react-advertising](https://github.com/KijijiCA/react-advertising) - React library for declaring display ad slots with pluggable demand providers instead of imperative GPT code.
@@ -347,7 +421,14 @@
 
 ![github](image/alg_R.png) [ArcAds](https://github.com/washingtonpost/ArcAds) - Arc XP's GPT wrapper that standardizes slot configuration, targeting, and refresh while supporting Prebid.js and Amazon header bidding vendors.
 
+![github](image/alg_R.png) [The Guardian Commercial](https://github.com/guardian/commercial) - The Guardian's production advertising monorepo implementing GPT orchestration, header bidding integration, and slot management on theguardian.com.
+
+![github](image/alg_R.png) [moli-ad-tag](https://github.com/highfivve/moli-ad-tag) - Modular TypeScript publisher ad tag library that orchestrates Google Ad Manager, Prebid.js, and Amazon TAM from a JSON configuration.
+
+![github](image/alg_R.png) [Newspack Ads](https://github.com/Automattic/newspack-ads) - Automattic's WordPress ad management plugin integrating GAM, Prebid, and bidder configurations for news publishers; archived in 2026 in favor of the Newspack monorepo.
+
 ![github](image/alg_R.png) [Discourse Ad Plugin](https://github.com/discourse/discourse-adplugin) - Official forum ad plugin with adapters for AdSense, DFP, and other networks; archived in 2025.
+
 ---
 
 ## Identity, Consent and Privacy
@@ -380,6 +461,16 @@
 
 ![web](image/alg_I.png) [LiveIntent Li_ad Submodule](https://docs.prebid.org/dev-docs/modules/userid-submodules/liveintent.html) - Configuration for the LiveIntent identity submodule used alongside email-based addressability.
 
+![web](image/alg_I.png) [Unified ID 2.0 Submodule Reference](https://docs.prebid.org/dev-docs/modules/userid-submodules/unified2.html) - Prebid.js User ID submodule configuration for client-side and server-side UID2 token generation and refresh.
+
+![web](image/alg_I.png) [LiveRamp RampID Submodule Reference](https://docs.prebid.org/dev-docs/modules/userid-submodules/ramp.html) - Configuration for passing LiveRamp Authenticated Traffic Solution envelopes through Prebid.js.
+
+![web](image/alg_I.png) [Criteo ID Submodule Reference](https://docs.prebid.org/dev-docs/modules/userid-submodules/criteo.html) - Configuration for enabling Criteo's identity submodule inside the Prebid.js User ID framework.
+
+![web](image/alg_I.png) [Open PAIR ID Submodule Reference](https://docs.prebid.org/dev-docs/modules/userid-submodules/open-pair.html) - Prebid.js submodule for passing encrypted publisher-advertiser reconciliation IDs conforming to the Open PAIR specification.
+
+![web](image/alg_I.png) [Google PAIR ID Submodule Reference](https://docs.prebid.org/dev-docs/modules/userid-submodules/pair.html) - Prebid.js submodule for reading clean-room or publisher-managed PAIR identifiers from first-party storage.
+
 ![github](image/alg_R.png) [Unified ID 2.0 Docs](https://github.com/IABTechLab/uid2docs) - Official UID2 documentation repository covering token generation, operators, SDKs, and Prebid integration.
 
 ![github](image/alg_R.png) [UID2 Web Integrations](https://github.com/IABTechLab/uid2-web-integrations) - Reference web integration code for UID2, including the browser SDK and Prebid.js module wiring.
@@ -391,6 +482,16 @@
 ![github](image/alg_R.png) [UID2 Examples](https://github.com/IABTechLab/uid2-examples) - Sample sites demonstrating UID2 and EUID integration patterns, from the JavaScript SDK to server-side token handling.
 
 ![github](image/alg_R.png) [UID2 Self-Serve Portal](https://github.com/IABTechLab/uid2-self-serve-portal) - Open-source portal that lets participants administer their own UID2 setup.
+
+![github](image/alg_R.png) [UID2 Java Client](https://github.com/IABTechLab/uid2-client-java) - Official Java SDK for publishers, DSPs, and sharers interacting with UID2 operator endpoints.
+
+![github](image/alg_R.png) [UID2 Python Client](https://github.com/IABTechLab/uid2-client-python) - Official Python SDK for generating, refreshing, and decrypting Unified ID 2.0 tokens.
+
+![github](image/alg_R.png) [UID2 .NET Client](https://github.com/IABTechLab/uid2-client-net) - Official .NET client library for server-side UID2 token management and bidstream decryption.
+
+![github](image/alg_R.png) [UID2 iOS SDK](https://github.com/IABTechLab/uid2-ios-sdk) - Official iOS SDK for managing Unified ID 2.0 tokens in mobile apps, with Prebid Mobile and Google GMA integration.
+
+![github](image/alg_R.png) [UID2 Android SDK](https://github.com/IABTechLab/uid2-android-sdk) - Official Android SDK for generating, refreshing, and passing UID2 tokens in in-app auctions.
 
 ![github](image/alg_R.png) [SWAN](https://github.com/SWAN-community/swan) - Open-source, privacy-preserving cross-domain identity network specification and implementation for publishers; dormant since 2021.
 
@@ -438,6 +539,28 @@
 
 ![github](image/alg_R.png) [ConsentStack CMP](https://github.com/ConsentStack/cmp) - Open-source, developer-focused consent management platform; dormant since 2018 but still a readable CMP reference implementation.
 
+![web](image/alg_I.png) [IAB Europe TCF Portal](https://iabeurope.eu/transparency-consent-framework/) - Governance home for the Transparency and Consent Framework, including TCF v2.3 policies, Global Vendor List, and CMP compliance rules.
+
+![web](image/alg_I.png) [IAB Tech Lab Global Privacy Protocol](https://iabtechlab.com/gpp/) - Official specification hub for GPP, tracking finalized US national and state sections, TCF integration, and CMP API versions.
+
+![github](image/alg_R.png) [LiveRamp iabconsent](https://github.com/LiveRamp/iabconsent) - Go parser for IAB TCF v1.1 and v2 consent strings used in server-side bidstream processing.
+
+![github](image/alg_R.png) [SirData iabtcfv2](https://github.com/SirDataFR/iabtcfv2) - Go client library for decoding and evaluating IAB TCF v2 consent strings.
+
+![github](image/alg_R.png) [iabtcf_consent_info](https://github.com/blaugold/iabtcf_consent_info) - Flutter plugin for reading IAB TCF v2 consent signals stored by native mobile CMP SDKs.
+
+![github](image/alg_R.png) [Guardian Consent Management Platform](https://github.com/guardian/consent-management-platform) - The Guardian's open-source CMP tooling and synthetic compliance checks across GDPR, CCPA, and regional frameworks.
+
+![github](image/alg_R.png) [Klaro](https://github.com/kiprotect/klaro) - Open-source, self-hostable privacy and consent manager for gating third-party scripts and ad tags on web properties.
+
+![github](image/alg_R.png) [CookieConsent](https://github.com/orestbida/cookieconsent) - Lightweight vanilla JavaScript consent management plugin for gating analytics and advertising scripts.
+
+![github](image/alg_R.png) [Fideslang](https://github.com/IABTechLab/fideslang) - Open-source privacy description language maintained with IAB Tech Lab for declaring data categories and processing rules in code.
+
+![github](image/alg_R.png) [Data Subject Rights Framework](https://github.com/InteractiveAdvertisingBureau/Data-Subject-Rights) - IAB Tech Lab technical specification for propagating data deletion requests across programmatic supply chain partners.
+
+![github](image/alg_R.png) [Global Privacy Control (GPC)](https://github.com/w3c/gpc) - W3C specification defining the browser-level `Sec-GPC` signal honored by US state privacy frameworks and Prebid GPP controls.
+
 ### Activity Controls and Regional Rules
 
 ![web](image/alg_I.png) [Prebid.js Activity Controls](https://docs.prebid.org/dev-docs/activity-controls.html) - The centralized rule set for suppressing storage access, geolocation, and partner data sharing per activity.
@@ -480,6 +603,26 @@
 
 ![github](image/alg_R.png) [IAB Tech Lab Privacy Lab](https://github.com/IABTechLab/privacy-lab) - Notebooks and utilities for testing how privacy-enhancing technologies change measurement and attribution outcomes.
 
+![github](image/alg_R.png) [W3C PATCG](https://github.com/patcg/meetings) - W3C Private Advertising Technology Community Group developing privacy-preserving web advertising and measurement standards.
+
+![github](image/alg_R.png) [Interoperable Private Attribution (IPA)](https://github.com/patcg-individual-drafts/ipa) - Multi-party computation proposal in W3C PATCG for cross-site ad attribution without user-level tracking.
+
+![github](image/alg_R.png) [Storage Access API](https://github.com/privacycg/storage-access) - W3C Privacy CG specification governing explicit cross-site cookie access in embedded iframes.
+
+![github](image/alg_R.png) [CHIPS](https://github.com/privacycg/CHIPS) - W3C Privacy CG specification for Cookies Having Independent Partitioned State, isolating third-party cookies per top-level site.
+
+![github](image/alg_R.png) [Privacy Sandbox Aggregation Service](https://github.com/privacysandbox/aggregation-service) - Open-source reference implementation for producing noisy aggregate measurement reports inside trusted execution environments.
+
+![github](image/alg_R.png) [Privacy Sandbox Bidding and Auction Services](https://github.com/privacysandbox/bidding-auction-servers) - Reference TEE auction servers for Protected Audience server-side bidding; archived in 2026 but a key study in enclave auction design.
+
+![github](image/alg_R.png) [Protected Auction Key/Value Service](https://github.com/privacysandbox/protected-auction-key-value-service) - Reference trusted key/value server for real-time Protected Audience signals; archived in 2025.
+
+![github](image/alg_R.png) [TURTLEDOVE / Protected Audience Explainer](https://github.com/WICG/turtledove) - Foundational WICG design documentation for browser-executed interest-group auctions; archived in 2025.
+
+![github](image/alg_R.png) [Topics API Specification](https://github.com/patcg-individual-drafts/topics) - Specification and explainer for coarse browser-derived interest topics; archived in 2025.
+
+![github](image/alg_R.png) [IAB Tech Lab Privacy Sandbox Demos](https://github.com/IABTechLab/privacysandboxdemos) - Reference demo implementations exercising Privacy Sandbox APIs alongside OpenRTB and Prebid workflows; dormant since 2024.
+
 ---
 
 ## Analytics, Monitoring and Performance
@@ -504,6 +647,8 @@
 
 ![web](image/alg_I.png) [Generic Viewability Module](https://docs.prebid.org/dev-docs/modules/viewability.html) - Element-level viewability tracking with configurable criteria — note the security disclaimer on the page before using it.
 
+![web](image/alg_I.png) [PBS Greenbids Analytics Reporter](https://docs.prebid.org/prebid-server/pbs-modules/greenbids-analytics-reporter.html) - Prebid Server analytics module that reports auction-level traffic shaping and bid participation metrics.
+
 ### Performance, Core Web Vitals and Sustainability
 
 ![github](image/alg_R.png) [Lighthouse](https://github.com/GoogleChrome/lighthouse) - Google's audit engine for measuring main-thread work, render-blocking scripts, and Core Web Vitals on ad-heavy pages.
@@ -522,6 +667,12 @@
 
 ![web](image/alg_I.png) [Prebid Statement on Sustainability](https://docs.prebid.org/overview/statement-on-sustainability.html) - The technical report behind the program: where the ad stack's emissions actually come from.
 
+![github](image/alg_R.png) [Scope3 Emissions Methodology](https://github.com/scope3data/methodology) - Open-source methodology and model specification for calculating carbon emissions across the programmatic advertising supply chain.
+
+![github](image/alg_R.png) [CO2.js](https://github.com/thegreenwebfoundation/co2.js) - JavaScript library from The Green Web Foundation for estimating carbon emissions from ad payload byte transfer.
+
+![web](image/alg_I.png) [PBS Scope3 RTD Module](https://docs.prebid.org/prebid-server/pbs-modules/scope3-real-time-data.html) - Prebid Server real-time data module that attaches Scope3 sustainability and carbon metrics to server-side auctions.
+
 ### Ad Quality, Fraud and Transparency
 
 ![github](image/alg_R.png) [Blacklight](https://github.com/the-markup/blacklight-collector) - Open-source privacy inspector that loads a URL in headless Chrome and reports the ad-tech and tracking scripts it observes.
@@ -539,6 +690,12 @@
 ![web](image/alg_I.png) [Qortex RTD Provider](https://docs.prebid.org/dev-docs/modules/qortexRtdProvider.html) - Ad quality and safety screening as a real-time data module.
 
 ![web](image/alg_I.png) [Mediafilter RTD Provider](https://docs.prebid.org/dev-docs/modules/mediafilterRtdProvider.html) - Filters disallowed advertiser categories and creative attributes out of the bid responses.
+
+![web](image/alg_I.png) [PBS Confiant Ad Quality Module](https://docs.prebid.org/prebid-server/pbs-modules/confiant-ad-quality.html) - Server-side Prebid module that scans creative markup for malvertising and ad quality violations before returning bids.
+
+![web](image/alg_I.png) [Trustworthy Accountability Group (TAG)](https://www.tagtoday.net/) - Industry anti-fraud certification body maintaining the TAG Registry IDs referenced in `ads.txt` and `sellers.json` files.
+
+![web](image/alg_I.png) [Media Rating Council (MRC)](https://mediaratingcouncil.org/) - Independent accreditation body defining viewability, invalid traffic (IVT), and programmatic auction measurement standards.
 
 ---
 
@@ -598,6 +755,14 @@
 
 ![web](image/alg_I.png) [Advanced Size Mapping](https://docs.prebid.org/dev-docs/modules/sizeMappingV2.html) - Media-query driven size and format selection per ad unit, the basis for responsive auction shapes.
 
+![web](image/alg_I.png) [PBS Greenbids RTD Module](https://docs.prebid.org/prebid-server/pbs-modules/greenbids-real-time-data.html) - Server-side real-time data module that throttles low-value SSP bid requests to lower infrastructure load and emissions.
+
+![web](image/alg_I.png) [PBS Optable Targeting Module](https://docs.prebid.org/prebid-server/pbs-modules/optable-targeting.html) - Server-side module that enriches Prebid Server OpenRTB requests with publisher first-party audience segments.
+
+![web](image/alg_I.png) [PBS 51Degrees Device Detection Module](https://docs.prebid.org/prebid-server/pbs-modules/51degrees-device-detection.html) - Server-side Prebid module that populates OpenRTB `device` attributes from user-agent and Client Hints headers.
+
+![web](image/alg_I.png) [PBS WURFL Device Detection Module](https://docs.prebid.org/prebid-server/pbs-modules/wurfl-device-detection.html) - Server-side device enrichment module that adds hardware and browser metadata to Prebid Server bid requests.
+
 ### Optimization Guides and Engineering Writing
 
 ![web](image/alg_I.png) [Implementing Prebid Server: Q&A](https://clearcode.cc/blog/prebid-server-qa-implementation/) - Architecture interview covering hosted PBS design, auction flow, and the ad-server handoff.
@@ -644,6 +809,32 @@
 
 ![github](image/alg_R.png) [SCTE-35, SCTE-104, SCTE-67 Reference Notes](https://github.com/leandromoreira/scte-35-scte-104-scte-67) - Written explanation of how ad signalling flows from SCTE-104 through SCTE-35 into HLS and DASH cues.
 
+![github](image/alg_R.png) [Comcast scte35-js](https://github.com/Comcast/scte35-js) - Comcast's JavaScript parser for decoding ANSI/SCTE-35 ad break cues in web players and SSAI tooling.
+
+![github](image/alg_R.png) [Comcast scte35-go](https://github.com/Comcast/scte35-go) - Comcast's Go library for parsing and serializing ANSI/SCTE-35 splice information tables.
+
+![github](image/alg_R.png) [NFL scte35](https://github.com/nfl/scte35) - Java library from the NFL for decoding SCTE-35 strings in live broadcast and SSAI pipelines.
+
+![github](image/alg_R.png) [TSDuck](https://github.com/tsduck/tsduck) - Open-source MPEG transport stream toolkit for inspecting, injecting, and manipulating SCTE-35 ad markers.
+
+![github](image/alg_R.png) [x9k3](https://github.com/futzu/SCTE-35_HLS_x9k3) - Python HLS segmenter with native SCTE-35 cue-out and cue-in parsing for live and VOD SSAI testing.
+
+![github](image/alg_R.png) [Eyevinn scte35-inserter](https://github.com/Eyevinn/scte35-inserter) - Utility for inserting SCTE-35 splice markers into transport streams at configurable intervals; dormant since 2022.
+
+![github](image/alg_R.png) [python-vast-xml-generator](https://github.com/selam/python-vast-xml-generator) - Python library for generating spec-compliant VAST XML responses in custom video ad servers.
+
+![github](image/alg_R.png) [Eyevinn Ad Normalizer](https://github.com/Eyevinn/ad-normalizer) - Proxy service in front of a VAST ad server that transcodes and packages video creatives for consistent SSAI stitching.
+
+![github](image/alg_R.png) [Eyevinn HLS Splice](https://github.com/Eyevinn/hls-splice) - Node.js library for splicing ad breaks into HLS playlists based on SCTE-35 and VAST timing.
+
+![github](image/alg_R.png) [Eyevinn Channel Engine](https://github.com/Eyevinn/channel-engine) - Open-source FAST channel playout engine supporting VOD-to-Live streams and SSAI ad break insertion.
+
+![github](image/alg_R.png) [SimpleSSAI](https://github.com/SimpleSSAI/SimpleSSAI) - API-driven open-source server-side ad insertion proxy for stitching VAST ads into HLS streams; dormant since 2022.
+
+![github](image/alg_R.png) [fast-tv-playout-core](https://github.com/stukenov/fast-tv-playout-core) - Go-based FAST TV playout core combining VOD-to-Live, HLS/CMAF packaging, and SSAI ad stitching.
+
+![github](image/alg_R.png) [MoQ Lab](https://github.com/pzanella/moq-lab) - Local Media over QUIC streaming sandbox comparing SSAI, CSAI, and server-guided ad insertion (SGAI) flows.
+
 ### Players and Prebid Video Integrations
 
 ![github](image/alg_R.png) [Open Player JS](https://github.com/openplayerjs/openplayerjs) - HTML5 video and audio player with built-in VAST, VMAP, and IMA3 ad support, commonly paired with Prebid VAST.
@@ -653,6 +844,44 @@
 ![github](image/alg_R.png) [videojs-vast-vpaid plugin](https://github.com/prebid/videojs-mailonline-plugin) - Prebid.org's fork of the MailOnline Video.js plugin that renders VAST and VPAID ads inside a Video.js player; dormant since 2021.
 
 ![github](image/alg_R.png) [videojs-mediatailor-ssai](https://github.com/dds05/videojs-mediatailor-ssai) - Video.js plugin that plays an AWS MediaTailor server-side ad insertion manifest in a standard web player.
+
+![github](image/alg_R.png) [videojs-ima](https://github.com/googleads/videojs-ima) - Official Google plugin integrating the IMA HTML5 SDK into Video.js for VAST, VMAP, and Prebid video playback.
+
+![github](image/alg_R.png) [videojs-contrib-ads](https://github.com/videojs/videojs-contrib-ads) - Core Video.js state machine library that handles preroll, midroll, and postroll lifecycle events for ad plugins.
+
+![github](image/alg_R.png) [Fluid Player](https://github.com/fluid-player/fluid-player) - Open-source HTML5 video player with built-in VAST and VPAID support for client-side video monetization.
+
+![github](image/alg_R.png) [Shaka Player](https://github.com/shaka-project/shaka-player) - Google's open-source DASH and HLS player with built-in IMA CSAI and DAI ad manager integrations.
+
+![github](image/alg_R.png) [hls.js](https://github.com/video-dev/hls.js) - JavaScript HLS client supporting HLS interstitials and timed metadata tags used by SSAI and SGAI workflows.
+
+![github](image/alg_R.png) [dash.js](https://github.com/Dash-Industry-Forum/dash.js) - Reference MPEG-DASH player supporting multi-period manifests and SCTE-35 event streams for ad insertion.
+
+![github](image/alg_R.png) [Google IMA HTML5 Samples](https://github.com/googleads/googleads-ima-html5) - Official HTML5 IMA SDK reference integrations for VAST, VMAP, and companion ads.
+
+![github](image/alg_R.png) [Google IMA HTML5 DAI Samples](https://github.com/googleads/googleads-ima-html5-dai) - Official reference implementations for Google Ad Manager Dynamic Ad Insertion (SSAI) on the web.
+
+![github](image/alg_R.png) [Google IMA Android Samples](https://github.com/googleads/googleads-ima-android) - Official Android IMA SDK examples for client-side VAST video monetization.
+
+![github](image/alg_R.png) [Google IMA iOS Samples](https://github.com/googleads/googleads-ima-ios) - Official iOS IMA SDK examples for native video ad insertion.
+
+![github](image/alg_R.png) [Google IMA Roku DAI Samples](https://github.com/googleads/googleads-ima-roku-dai) - Official Roku BrightScript samples for CTV Dynamic Ad Insertion with Google Ad Manager.
+
+![github](image/alg_R.png) [Google IMA tvOS DAI Samples](https://github.com/googleads/googleads-ima-tvos-dai) - Official Apple tvOS samples for server-side Dynamic Ad Insertion.
+
+![github](image/alg_R.png) [vast-ima-player](https://github.com/glomex/vast-ima-player) - Wrapper around the Google IMA HTML5 SDK simplifying VAST playback, error handling, and player lifecycle hooks.
+
+![github](image/alg_R.png) [ads-manager](https://github.com/basil79/ads-manager) - Lightweight HTML5 video ads manager built on top of `@dailymotion/vast-client` for custom player integrations.
+
+![github](image/alg_R.png) [mol-video-ad-sdk](https://github.com/MailOnline/mol-video-ad-sdk) - MailOnline's standalone VAST and VPAID playback SDK designed to sit over any HTML5 video player.
+
+![github](image/alg_R.png) [Bitmovin Yospace Integration](https://github.com/bitmovin/bitmovin-player-web-integrations-yospace) - Reference web integration pairing Bitmovin Player with Yospace server-side ad insertion.
+
+![web](image/alg_I.png) [Google Interactive Media Ads SDK Docs](https://developers.google.com/interactive-media-ads) - Official documentation for Google's client-side IMA and server-side DAI SDKs across web, mobile, and CTV.
+
+![web](image/alg_I.png) [Prebid.js JW Player Video Provider](https://docs.prebid.org/dev-docs/modules/jwplayerVideoProvider.html) - Video provider submodule connecting Prebid's video module directly to JW Player instances.
+
+![web](image/alg_I.png) [Prebid.js Video.js Video Provider](https://docs.prebid.org/dev-docs/modules/videojsVideoProvider.html) - Video provider submodule wiring Prebid's video module directly to Video.js players.
 
 ![web](image/alg_I.png) [Prebid Server Video Adapter Overview](https://docs.prebid.org/dev-docs/pbsBidAdapter-video-overview.html) - How VAST requests differ between client-side and server-side video auctions.
 
@@ -710,6 +939,30 @@
 
 ![github](image/alg_R.png) [rtblint](https://github.com/aleksUIX/rtblint) - OpenRTB linter that validates 2.x bid requests and responses against versioned schemas and spec rules.
 
+![github](image/alg_R.png) [RTBkit](https://github.com/rtbkit/rtbkit) - Pioneering open-source C++ real-time bidder framework with exchange connectors, pacing, and budget control; dormant since 2018 but foundational reading.
+
+![github](image/alg_R.png) [RTB4FREE Bidder](https://github.com/RTB4FREE/bidder) - Open-source Java OpenRTB DSP and bidder engine with campaign targeting and simulator tools; dormant since 2022.
+
+![github](image/alg_R.png) [VOXDSP](https://github.com/VOXDSP/VOXDSP) - Open-source OpenRTB demand-side platform and bidder written in PHP with Redis and MySQL backing.
+
+![github](image/alg_R.png) [alicebob/ssp](https://github.com/alicebob/ssp) - Minimal Go SSP simulator for sending OpenRTB bid requests to test exchanges and bidders; dormant since 2020.
+
+![github](image/alg_R.png) [open_rtb_ecto](https://github.com/AppMonet/open_rtb_ecto) - Elixir Ecto schemas and validation helpers for OpenRTB 2.x and 3.0 payloads.
+
+![github](image/alg_R.png) [gortb](https://github.com/MehrazRumman/gortb) - Go library providing typed OpenRTB 2.5 structs and request validation for DSPs and SSPs.
+
+![github](image/alg_R.png) [pricers](https://github.com/benjaminch/pricers) - Go library implementing OpenRTB win-price notification encryption and decryption schemes; dormant since 2023.
+
+![github](image/alg_R.png) [Avocarrot OpenRTB](https://github.com/Avocarrot/openrtb) - Node.js library for building and validating OpenRTB bid request and response objects; dormant since 2019.
+
+![github](image/alg_R.png) [anossov/openrtb](https://github.com/anossov/openrtb) - Python object model for OpenRTB 2.x bid requests and responses; dormant since 2022.
+
+![github](image/alg_R.png) [OpenRTB Examples](https://github.com/openrtb/examples) - Reference collection of OpenRTB bid request and response JSON fixtures across display, video, native, and mobile; dormant since 2021.
+
+![web](image/alg_I.png) [Google Authorized Buyers RTB Docs](https://developers.google.com/authorized-buyers/rtb/get-started/start) - Official protocol guide for writing OpenRTB JSON and Protobuf bidders that transact with Google Ad Exchange.
+
+![web](image/alg_I.png) [Google OpenRTB Protobuf Reference](https://developers.google.com/authorized-buyers/rtb/data) - Downloadable `openrtb.proto`, Google extension protos, creative status codes, and no-bid reason dictionaries.
+
 ### Tutorials and Reference Architectures
 
 ![github](image/alg_R.png) [adserver-tutorial](https://github.com/kijepark/adserver-tutorial) - Node.js ad server built step by step, from request handling through targeting to the auction.
@@ -744,6 +997,18 @@
 
 ![github](image/alg_R.png) [Category Mapping File](https://github.com/prebid/category-mapping-file) - Default IAB sub-category to ad-server category translation files used for long-form video, served from a CDN.
 
+![web](image/alg_I.png) [IAB Tech Lab OpenRTB Hub](https://iabtechlab.com/standards/openrtb/) - Official specification portal summarizing OpenRTB release milestones from 2.3 through 2.6 and 3.0.
+
+![web](image/alg_I.png) [IAB Tech Lab Supply Chain and Foundations](https://iabtechlab.com/standards/supply-chain-foundations/) - Index of core programmatic trading specs including OpenRTB, ads.txt, sellers.json, buyers.json, CATS, MRAID, and SHARC.
+
+![github](image/alg_R.png) [Programmatic Auction Definitions](https://github.com/InteractiveAdvertisingBureau/programmatic-auction-definitions) - IAB Tech Lab reference definitions aligning auction terminology, clearing rules, and MRC disclosure reporting.
+
+![github](image/alg_R.png) [Ad Management API](https://github.com/InteractiveAdvertisingBureau/AdManagementAPI) - IAB Tech Lab creative approval and markup delivery API specification for programmatic exchanges.
+
+![github](image/alg_R.png) [ECAPI Specification](https://github.com/InteractiveAdvertisingBureau/ecapi) - IAB Tech Lab Event and Conversion API standardizing server-to-server marketing event communication.
+
+![github](image/alg_R.png) [OpenOOH Venue Taxonomy](https://github.com/openooh/venue-taxonomy) - Open taxonomy of Digital Out-of-Home venue types referenced in OpenRTB DOOH bid requests.
+
 ### Supply Path, Authorization and Transparency
 
 ![web](image/alg_I.png) [ads.txt Specification](https://iabtechlab.com/ads-txt/) - The authoritative ads.txt and app-ads.txt specification for declaring authorized sellers of inventory.
@@ -773,6 +1038,22 @@
 ![web](image/alg_I.png) [Curated Audiences (SDA) Specification](https://iabtechlab.com/sda/) - The seller-defined audiences framework, renamed Curated Audiences, for passing publisher-owned segments in OpenRTB.
 
 ![web](image/alg_I.png) [Addressability and PETs Standards](https://iabtechlab.com/standards/addressability-and-pets/) - IAB Tech Lab's index of addressability and privacy-enhancing-technology standards, with the release status of each.
+
+![github](image/alg_R.png) [Supply Chain Validation](https://github.com/InteractiveAdvertisingBureau/Supply-Chain-Validation) - Official IAB Tech Lab GitHub repository for `ads.txt`, `app-ads.txt`, and supply chain validation specifications.
+
+![github](image/alg_R.png) [sellers.json (JS)](https://github.com/perry-mitchell/sellers.json) - JavaScript parser and generator for `sellers.json` files, companion to `perry-mitchell/ads.txt`; dormant since 2022.
+
+![github](image/alg_R.png) [AppGoblin](https://github.com/appgoblin-dev/appgoblin) - Open-source mobile app store analytics platform tracking ad network SDKs, trackers, and `app-ads.txt` relationships.
+
+![github](image/alg_R.png) [SPO sellers.json Crawler](https://github.com/adops-tool/SPO-sellers-json-crawler) - Async Python crawler for verifying `sellers.json` endpoints and mapping intermediary supply paths.
+
+![github](image/alg_R.png) [python-sellers-json-validator](https://github.com/adops-tool/python-sellers-json-validator) - Async Python bulk checker for validating `sellers.json` files against the IAB Tech Lab schema.
+
+![github](image/alg_R.png) [AdVerify ads.txt Crawler](https://github.com/adops-tool/AdVerify-adstxt-appadstxt-Crawler) - Async Python crawler for bulk `ads.txt` and `app-ads.txt` availability and syntax checks.
+
+![github](image/alg_R.png) [Matcher ads.txt](https://github.com/adops-tool/Matcher-ads.txt-app-ads.txt) - Client-side utility for diffing and validating `ads.txt` and `app-ads.txt` files against partner line lists.
+
+![web](image/alg_I.png) [Digital Services Act (DSA) Transparency](https://iabtechlab.com/standards/dsa/) - IAB Tech Lab specification for transmitting EU DSA ad disclosure fields via the OpenRTB DSA extension.
 
 ### Video, Creative and Measurement Standards
 
@@ -805,6 +1086,18 @@
 ![github](image/alg_R.png) [OpenDirect Specification](https://github.com/InteractiveAdvertisingBureau/OpenDirect) - The protocol for programmatic direct deals: RFP, IO, and creative exchange in machine-readable form.
 
 ![github](image/alg_R.png) [Deals API](https://github.com/IABTechLab/deal-api) - IAB Tech Lab's API specification for negotiating and executing programmatic guaranteed deals.
+
+![web](image/alg_I.png) [IAB Tech Lab VAST Portal](https://iabtechlab.com/standards/vast/) - Official VAST specification hub covering VAST 4.3, the CTV Addendum, ACIF registration, and attribution reporting.
+
+![web](image/alg_I.png) [Open Measurement SDK (OM SDK)](https://iabtechlab.com/standards/open-measurement-sdk/) - Official IAB Tech Lab documentation for OMID viewability and verification across mobile apps, web video, and CTV.
+
+![github](image/alg_R.png) [OM SDK Device Attestation](https://github.com/InteractiveAdvertisingBureau/OMSDK-Device-Attestation) - IAB Tech Lab specification adapting Privacy Pass to verify authentic mobile and CTV playback devices.
+
+![github](image/alg_R.png) [Ad Creative ID Framework (ACIF)](https://github.com/InteractiveAdvertisingBureau/ACIF) - IAB Tech Lab specification for persistent creative identifiers across CTV and video supply chains.
+
+![web](image/alg_I.png) [CTV Programmatic Guide](https://iabtechlab.com/standards/advanced-tv/ctv-programmatic-guide/) - IAB Tech Lab use-case guide mapping OpenRTB 2.6, VAST, OM SDK, ACIF, and Content Taxonomy onto CTV workflows.
+
+![web](image/alg_I.png) [CTV Ad Portfolio Guidelines](https://iabtechlab.com/standards/ctv-ad-portfolio/) - Technical and OpenRTB signaling guidance for Pause, Menu, Screensaver, Overlay, and Squeeze Back CTV formats.
 
 ### Agentic and AI-Era Protocols
 
@@ -839,6 +1132,16 @@
 ![github](image/alg_R.png) [advertising-hub](https://github.com/itallstartedwithaidea/advertising-hub) - Curated open-source collection of advertising platform APIs, MCP servers, and agent integrations.
 
 ![web](image/alg_I.png) [Model Context Protocol](https://modelcontextprotocol.io/) - The transport most ad-tech agent integrations, including AdCP and the GAM and VAST MCP servers, are built on.
+
+![github](image/alg_R.png) [AdCP TypeScript SDK](https://github.com/adcontextprotocol/adcp-client) - Official TypeScript client and server SDK for building Ad Context Protocol integrations.
+
+![github](image/alg_R.png) [AdCP Python SDK](https://github.com/adcontextprotocol/adcp-client-python) - Official Python client library for interacting with AdCP media-buying and seller servers.
+
+![github](image/alg_R.png) [AdCP Go SDK](https://github.com/adcontextprotocol/adcp-go) - Official Go SDK implementing Ad Context Protocol schemas and transports.
+
+![github](image/alg_R.png) [AdCP Java SDK](https://github.com/adcontextprotocol/adcp-sdk-java) - Official Java SDK for integrating JVM ad servers and DSPs with AdCP.
+
+![github](image/alg_R.png) [IAB Agentic Primitives](https://github.com/IABTechLab/iab-agentic-primitives) - Shared pre-release contract library defining wire protocols, state machines, and conformance vectors for IAB agentic advertising.
 
 ---
 
@@ -882,13 +1185,21 @@
 
 ![web](image/alg_I.png) [Google Ads Developer Blog](https://ads-developers.googleblog.com/) - Google's developer blog covering Ad Manager API, GPT, and Ads API changes.
 
+![web](image/alg_I.png) [ExchangeWire](https://www.exchangewire.com/) - Programmatic and ad tech publication covering SSP economics, CTV, curation, privacy, and agentic protocols.
+
+![web](image/alg_I.png) [IAB Tech Lab News](https://iabtechlab.com/iab-tech-lab-news/) - Release announcements, public comment windows, and technical updates directly from the standards working groups.
+
 ### Communities and Q&A
 
 ![web](image/alg_I.png) [Ad Ops Slack, #HeaderBidding](https://redditadops.slack.com/messages/C0HVALS8P/) - The channel Prebid.org points publishers to for operational questions and release chatter.
 
+![web](image/alg_I.png) [Beeler.Tech](https://www.beeler.tech/) - Peer community and knowledge hub for publisher ad operations, programmatic yield, and revenue engineering teams.
+
 ![github](image/alg_R.png) [Prebid.js GitHub Issues](https://github.com/prebid/Prebid.js/issues) - Where adapter regressions and module bugs get filed before they appear anywhere else.
 
 ![web](image/alg_I.png) [r/adops](https://www.reddit.com/r/adops/) - Practitioner subreddit for floors, GAM line items, waterfall debugging, and SSP comparisons.
+
+![web](image/alg_I.png) [r/adtech](https://www.reddit.com/r/adtech/) - Practitioner subreddit focused on ad tech engineering, RTB architecture, identity, and programmatic infrastructure.
 
 ![web](image/alg_I.png) [Stack Overflow: prebid.js](https://stackoverflow.com/questions/tagged/prebid.js) - Tagged Q&A for concrete implementation errors in Prebid.js integrations.
 
@@ -909,6 +1220,14 @@
 ![github](image/alg_R.png) [awesome-adops-site](https://github.com/adops-tool/awesome-adops-site) - Companion list of AdOps and ad tech resources, including tooling that sits around the auction.
 
 ![github](image/alg_R.png) [awesome-programmatic](https://github.com/adops-tool/awesome-programmatic) - Sibling list covering programmatic platforms, ad servers, and DSP and SSP frameworks.
+
+![github](image/alg_R.png) [awesome-privacy-adtech](https://github.com/adops-tool/awesome-privacy-adtech) - Sibling list covering open-source CMPs, TCF and GPP tooling, clean rooms, and privacy-preserving ad tech specs.
+
+![github](image/alg_R.png) [awesome-ad-fraud](https://github.com/adops-tool/awesome-ad-fraud) - Sibling list covering IVT detection, bot mitigation libraries, supply chain verification, and ad quality tools.
+
+![github](image/alg_R.png) [awesome-adops-automation](https://github.com/adops-tool/awesome-adops-automation) - Sibling list covering ad server API SDKs, trafficking automation, reporting pipelines, and AdOps workflows.
+
+![github](image/alg_R.png) [awesome-server-side-tracking](https://github.com/adops-tool/awesome-server-side-tracking) - Sibling list covering server-side event collection, conversion APIs, and first-party measurement stacks.
 
 ---
 
