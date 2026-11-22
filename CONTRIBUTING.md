@@ -1,9 +1,9 @@
 [![CONTRIBUTING](https://github.com/OstinUA/Promt-AI-Helper/blob/main/Additional%20files/Image/CONTRIBUTING.svg)](https://github.com/adops-tool)
 
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-3e80ed?style=for-the-badge&logo=github&logoColor=white)](https://github.com/adops-tool)
-[![Open Source](https://img.shields.io/badge/Open_Source-Yes-brightgreen?style=for-the-badge&logo=open-source&logoColor=white)](https://github.com/adops-tool)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-3e80ed?style=for-the-badge&logo=github&logoColor=white)](https://github.com/adops-tool/awesome-header-bidding/pulls)
+[![Open Source](https://img.shields.io/badge/Open_Source-Yes-brightgreen?style=for-the-badge&logo=open-source&logoColor=white)](https://github.com/adops-tool/awesome-header-bidding/pulls)
 
-**Contributing to Awesome Header Bidding**
+# Contributing to Awesome Header Bidding
 
 First off, thank you for considering contributing to Awesome Header Bidding. We appreciate your time and effort in helping us build the definitive index of the open-source programmatic stack.
 
