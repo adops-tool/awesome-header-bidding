@@ -24,7 +24,7 @@ Things that are not acceptable:
 
 ## ⬢ Scope
 
-This policy applies to all public repositories under the [OstinUA](https://github.com/OstinUA) GitHub account and all other organizations or projects owned or managed by this user.
+This policy applies to [Awesome Header Bidding](https://github.com/adops-tool/awesome-header-bidding), to all public repositories under the [adops-tool](https://github.com/adops-tool) GitHub account, and to all other organizations or projects owned or managed by the maintainer.
 
 ## ⬢ Enforcement
 
